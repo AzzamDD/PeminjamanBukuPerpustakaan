@@ -1,4 +1,4 @@
-
+import { redirect } from "next/navigation";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,10 +21,12 @@ const Header = () => {
 };
 
 export default function HomePage() {
+  redirect("/landing");
   return (
     
     <main className="min-h-screen flex flex-col">
       <Header />
+      {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-100 py-20 px-4">
         <div className="container mx-auto text-center">
           <Image
@@ -43,6 +45,16 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+
+
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8 px-4">
+        <div className="container mx-auto text-center">
+          <p>&copy; 2024 Perpustakaan SMKN 8 Malang. Semua hak dilindungi.</p>
+        </div>
+      </footer>
     </main>
   );
 }

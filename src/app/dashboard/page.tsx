@@ -12,8 +12,17 @@ const Header = () => {
 
       {/* Center: Navigation */}
       <nav className="flex space-x-8 font-semibold text-gray-800 text-lg center text-center">
+        <Link href="/riwayat" className="hover:text-red-600">
+          RIWAYAT PEMINJAMAN
+        </Link>
+        <Link href="/form" className="hover:text-red-600">
+          FORM
+        </Link>
+        <Link href="/about" className="hover:text-red-600">
+          ABOUT
+        </Link>
         <Link href="/login" className="hover:text-red-600">
-          LOGIN?
+          LOGOUT
         </Link>
       </nav>
     </header>
@@ -21,10 +30,11 @@ const Header = () => {
 };
 
 export default function HomePage() {
+
   return (
-    
     <main className="min-h-screen flex flex-col">
       <Header />
+      {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-100 py-20 px-4">
         <div className="container mx-auto text-center">
           <Image
