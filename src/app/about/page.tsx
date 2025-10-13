@@ -57,18 +57,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-gradient-to-r from-blue-25 to-indigo-50 py-20 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Pembuat</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Nama : Achmad Iqbal Ilmi Azzam<br />
+            Email : ajammdodot@gmail.com<br />
+            IG : @szamm0_
+          </p>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Hubungi Kami</h2>
           <p className="text-lg text-gray-600 mb-8">
             SMKN 8 Malang<br />
-            Jl. Raya Bareng No. 123, Malang, Jawa Timur<br />
-            Email: perpustakaan@smkn8malang.sch.id<br />
-            Telp: (0341) 123456
+            Jl. Teluk Pacitan,Arjosari,Kec.Blimbing,Kota Malang, Jawa Timur<br />
+            IG : @smkn8malang
           </p>
         </div>
       </section>
-    </main> // ✅ ini penting!
+    </main>
   );
 }

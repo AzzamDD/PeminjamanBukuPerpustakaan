@@ -45,19 +45,19 @@ export default function BukuPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Buku 1 */}
           <div className="bg-white border border-gray-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-            <h1 className="text-xl font-bold mb-2">The Great Gatsby</h1>
-            <h2 className="text-gray-700 mb-3 italic">by F. Scott Fitzgerald</h2>
+            <h1 className="text-xl font-bold mb-2">Semangkuk mie ayam sebelum mati</h1>
+            <h2 className="text-gray-700 mb-3 italic">by Brian Krisna</h2>
             <p className="text-gray-600">
-              Novel klasik tentang mimpi Amerika dan zaman Jazz.
+                Cerita tentang isu mental health yang beberapa tahun terakhir cukup mendapat sorotan.
             </p>
           </div>
 
           {/* Buku 2 */}
           <div className="bg-white border border-gray-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-            <h1 className="text-xl font-bold mb-2">To Kill a Mockingbird</h1>
-            <h2 className="text-gray-700 mb-3 italic">by Harper Lee</h2>
+            <h1 className="text-xl font-bold mb-2">3726 mdpl</h1>
+            <h2 className="text-gray-700 mb-3 italic">by  Nurwina Sari </h2>
             <p className="text-gray-600">
-              Cerita tentang keadilan rasial dan masa kecil di Amerika Selatan.
+              Cerita tentang Rangga, Ketua Panitia OSPEK Fakultas Kehutanan 2023 itu juga menyibukkan dirinya dengan mengagumi Andini. Seorang mahasiswi yang bercita-cita bisa mendaki Gunung Rinjani, sekaligus adik tingkat yang ia sebut sebagai manusia favorit.
             </p>
           </div>
 
