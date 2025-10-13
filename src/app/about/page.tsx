@@ -15,13 +15,13 @@ const Header = () => {
          <Link href="/dashboard" className="hover:text-red-600">
           BERANDA
         </Link>
-        <Link href="/dashboard" className="hover:text-red-600">
+        <Link href="/riwayat" className="hover:text-red-600">
           RIWAYAT PEMINJAMAN
         </Link>
         <Link href="/form" className="hover:text-red-600">
           FORM
         </Link>
-        <Link href="/login" className="hover:text-red-600">
+        <Link href="/buku" className="hover:text-red-600">
           DAFTAR BUKU
         </Link>
         <Link href="/about" className="hover:text-red-600">
