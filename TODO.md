@@ -1,7 +1,11 @@
-# TODO: Fix Navigation to Form Page
+# Fix Netlify Build Errors
 
-- [ ] Import Link from 'next/link' in uuk/src/app/page.tsx
-- [ ] Update the "FORM" link in navigation to use <Link href="/form">
-- [ ] Update the "RIWAYAT PEMINJAMAN" link to use <Link href="/dasboard"> (assuming dashboard page)
-- [ ] Leave "ABOUT" as placeholder or set href="/about"
-- [ ] Test navigation by running the app and clicking "FORM"
+## Tasks
+- [x] Fix "Unexpected any" error in src/apyp/riwayat/page.tsx by replacing `any` with `RiwayatItem` type
+- [x] Replace `<img>` with `<Image>` in src/app/riwayat/page.tsx header
+- [x] Replace `<img>` with `<Image>` in src/app/about/page.tsx header
+- [x] Replace `<img>` with `<Image>` in src/app/dashboard/page.tsx header
+- [x] Replace `<img>` with `<Image>` in src/app/form/page.tsx header
+- [x] Replace `<img>` with `<Image>` in src/app/landing/page.tsx header
+- [x] Replace `<img>` with `<Image>` in src/app/page.tsx header
+- [ ] Run `npm run build` to verify fixes

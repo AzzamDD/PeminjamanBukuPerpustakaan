@@ -1,14 +1,15 @@
 "use client";
 
 import Link from 'next/link';
-import { useRiwayat } from '../../context/RiwayatContext';
+import Image from 'next/image';
+import { useRiwayat, RiwayatItem } from '../../context/RiwayatContext';
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between px-4 py-2 border-b border-gray-200 bg-white">
       {/* Left: Logo */}
       <div className="flex items-center">
-        <img src="/smkn 8 malang.png" alt="logo" className="w-15 h-10" />
+        <Image src="/smkn 8 malang.png" alt="logo" width={60} height={40} />
       </div>
 
       {/* Center: Navigation */}
@@ -48,7 +49,7 @@ const RiwayatForm = () => {
             <p className="text-center text-gray-500">Belum ada riwayat peminjaman.</p>
           ) : (
             <div className="grid gap-4">
-              {riwayat.map((item: any, index: number) => (
+              {riwayat.map((item: RiwayatItem, index: number) => (
                 <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                   <p><strong>Nama:</strong> {item.nama}</p>
                   <p><strong>Judul Buku:</strong> {item.judulBuku}</p>
