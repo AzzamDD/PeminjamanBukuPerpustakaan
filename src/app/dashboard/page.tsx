@@ -12,16 +12,22 @@ const Header = () => {
 
       {/* Center: Navigation */}
       <nav className="flex space-x-8 font-semibold text-gray-800 text-lg center text-center">
-        <Link href="/riwayat" className="hover:text-red-600">
+         <Link href="/dashboard" className="hover:text-red-600">
+          BERANDA
+        </Link>
+        <Link href="/dashboard" className="hover:text-red-600">
           RIWAYAT PEMINJAMAN
         </Link>
         <Link href="/form" className="hover:text-red-600">
           FORM
         </Link>
+        <Link href="/login" className="hover:text-red-600">
+          DAFTAR BUKU
+        </Link>
         <Link href="/about" className="hover:text-red-600">
           ABOUT
         </Link>
-        <Link href="/login" className="hover:text-red-600">
+         <Link href="/login" className="hover:text-red-600">
           LOGOUT
         </Link>
       </nav>

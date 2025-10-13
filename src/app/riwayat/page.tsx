@@ -23,6 +23,9 @@ const Header = () => {
         <Link href="/form" className="hover:text-red-600">
           FORM
         </Link>
+        <Link href="/login" className="hover:text-red-600">
+          DAFTAR BUKU
+        </Link>
         <Link href="/about" className="hover:text-red-600">
           ABOUT
         </Link>
