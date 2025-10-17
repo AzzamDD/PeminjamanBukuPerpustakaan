@@ -40,7 +40,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
-      {/* Hero Section */}
+
       <section className="bg-gradient-to-r from-blue-50 to-indigo-100 py-20 px-4">
         <div className="container mx-auto text-center">
           <Image

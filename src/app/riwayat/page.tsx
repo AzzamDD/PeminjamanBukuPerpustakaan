@@ -57,7 +57,9 @@ const RiwayatForm = () => {
                   <p><strong>Nama:</strong> {item.nama}</p>
                   <p><strong>Judul Buku:</strong> {item.judulBuku}</p>
                   <p><strong>No Buku:</strong> {item.noBuku}</p>
+                  <p><strong>Nama Petugas:</strong> {item.Petugas}</p>
                   <p><strong>Tanggal:</strong> {item.tanggal}</p>
+                  <p><strong>Tanggal Kembali:</strong> {item.tanggalk}</p>
                 </div>
               ))}
             </div>

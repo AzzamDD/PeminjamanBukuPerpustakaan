@@ -6,7 +6,9 @@ export interface RiwayatItem {
   nama: string;
   judulBuku: string;
   noBuku: string;
+  Petugas: string;
   tanggal: string;
+  tanggalk: string;
 }
 
 interface RiwayatContextType {

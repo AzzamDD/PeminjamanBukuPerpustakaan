@@ -42,21 +42,30 @@ const SimpleForm = () => {
   const [nama, setNama] = useState("");
   const [judulBuku, setJudulBuku] = useState("");
   const [noBuku, setNoBuku] = useState("");
+  const [Petugas, setPetugas] = useState("");
   const { addRiwayat } = useRiwayat();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const today = new Date();
+    const threeDaysLater = new Date();
+    threeDaysLater.setDate(today.getDate() + 3);
+
     const newEntry = {
       nama,
       judulBuku,
       noBuku,
+      Petugas,
       tanggal: new Date().toLocaleDateString(),
+      tanggalk : threeDaysLater.toLocaleDateString(),
     };
     addRiwayat(newEntry);
     alert("Peminjaman berhasil disimpan!");
     setNama("");
     setJudulBuku("");
     setNoBuku("");
+    setPetugas("");
   };
 
   return (
@@ -98,6 +107,18 @@ const SimpleForm = () => {
               placeholder="Seri buku"
               value={noBuku}
               onChange={(e) => setNoBuku(e.target.value)}
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 text-sm font-medium">Nama Petugas</label>
+            <input
+              type="text"
+              placeholder="nama petugas"
+              value={Petugas}
+              onChange={(e) => setPetugas(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
             />

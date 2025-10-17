@@ -40,8 +40,6 @@ export default function BukuPage() {
       <Header />
       <div className="container mx-auto py-10">
         <h1 className="text-3xl font-bold mb-8 text-center">Daftar Buku</h1>
-
-        {/* Kotak Buku Manual */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Buku 1 */}
           <div className="bg-white border border-gray-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
