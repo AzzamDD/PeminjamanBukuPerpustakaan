@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import Image from 'next/image';
-import { useState } from "react";
-import { useRiwayat } from "../../context/RiwayatContext";
 
 const Header = () => {
   return (
@@ -15,7 +13,7 @@ const Header = () => {
 
       {/* Center: Navigation */}
       <nav className="flex space-x-8 font-semibold text-gray-800 text-lg center text-center">
-         <Link href="/dashboard" className="hover:text-red-600">
+        <Link href="/dashboard" className="hover:text-red-600">
           BERANDA
         </Link>
         <Link href="/riwayat" className="hover:text-red-600">
@@ -30,7 +28,7 @@ const Header = () => {
         <Link href="/about" className="hover:text-red-600">
           ABOUT
         </Link>
-         <Link href="/login" className="hover:text-red-600">
+        <Link href="/login" className="hover:text-red-600">
           LOGOUT
         </Link>
       </nav>
@@ -39,52 +37,22 @@ const Header = () => {
 };
 
 const SimpleForm = () => {
-  const [nama, setNama] = useState("");
-  const [judulBuku, setJudulBuku] = useState("");
-  const [noBuku, setNoBuku] = useState("");
-  const [Petugas, setPetugas] = useState("");
-  const { addRiwayat } = useRiwayat();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const today = new Date();
-    const threeDaysLater = new Date();
-    threeDaysLater.setDate(today.getDate() + 3);
-
-    const newEntry = {
-      nama,
-      judulBuku,
-      noBuku,
-      Petugas,
-      tanggal: new Date().toLocaleDateString(),
-      tanggalk : threeDaysLater.toLocaleDateString(),
-    };
-    addRiwayat(newEntry);
-    alert("Peminjaman berhasil disimpan!");
-    setNama("");
-    setJudulBuku("");
-    setNoBuku("");
-    setPetugas("");
-  };
-
   return (
     <>
       <Header />
 
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-md w-80">
-          <h2 className="text-xl font-semibold mb-4 text-center">Form peminjaman buku</h2>
+        <form className="bg-white p-6 rounded-2xl shadow-md w-80">
+          <h2 className="text-xl font-semibold mb-4 text-center">
+            Form peminjaman buku
+          </h2>
 
           <div className="mb-3">
             <label className="block mb-1 text-sm font-medium">Nama</label>
             <input
               type="text"
               placeholder="Masukkan nama"
-              value={nama}
-              onChange={(e) => setNama(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
             />
           </div>
 
@@ -93,10 +61,7 @@ const SimpleForm = () => {
             <input
               type="text"
               placeholder="Masukkan judul buku"
-              value={judulBuku}
-              onChange={(e) => setJudulBuku(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
             />
           </div>
 
@@ -105,10 +70,7 @@ const SimpleForm = () => {
             <input
               type="text"
               placeholder="Seri buku"
-              value={noBuku}
-              onChange={(e) => setNoBuku(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
             />
           </div>
 
@@ -117,15 +79,12 @@ const SimpleForm = () => {
             <input
               type="text"
               placeholder="nama petugas"
-              value={Petugas}
-              onChange={(e) => setPetugas(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
             />
           </div>
 
           <button
-            type="submit"
+            type="button"
             className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
           >
             Kirim
